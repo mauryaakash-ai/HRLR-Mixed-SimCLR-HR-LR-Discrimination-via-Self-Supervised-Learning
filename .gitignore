@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Datasets and checkpoints
+Dataset/
+checkpoints/
+checkpoints_mixed/
+*.pth
+*.pt
+*.ckpt
+
+# Logs
+# We might want to keep log files for reference, but ignore by default if large. 
+# The user might want the logs on github since we reference them in README.
+# I will only ignore __pycache__, checkpoints, datasets.

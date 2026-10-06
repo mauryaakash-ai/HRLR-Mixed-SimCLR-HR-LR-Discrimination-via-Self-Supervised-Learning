@@ -1,0 +1,35 @@
+Device: cuda
+Encoder frozen — checkpoint: ./checkpoints_mixed/checkpoint_epoch0100.pth
+
+Extracting features (10 patches/image)...
+Found 150 HR + 150 LR images
+Features shape: (3000, 512) | Labels: (3000,)
+HR samples: 1500 | LR samples: 1500
+
+Testing RANDOM encoder for comparison...
+Found 150 HR + 150 LR images
+Random encoder accuracy: 80.27%
+
+Training Logistic Regression on pretrained features...
+
+=== Linear Evaluation Results (RealSR Val Set) ===
+Random encoder accuracy:    80.27%
+Pretrained encoder train:   99.75%
+Pretrained encoder val:     98.00%
+Improvement over random:    +17.73%
+
+Classification Report (Val):
+               precision    recall  f1-score   support
+
+   HR (clean)       0.98      0.98      0.98       303
+LR (degraded)       0.98      0.98      0.98       297
+
+     accuracy                           0.98       600
+    macro avg       0.98      0.98      0.98       600
+ weighted avg       0.98      0.98      0.98       600
+
+
+Per-source accuracy (val split):
+  canon   : 99.53%  (n=213)
+  div2k   : 95.54%  (n=202)
+  nikon   : 98.92%  (n=185)
