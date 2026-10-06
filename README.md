@@ -37,14 +37,20 @@ The project consists of several components:
 
 ## Dataset
 
+*Note: The dataset and model checkpoints are excluded from this repository due to GitHub file size limits. If you wish to train the model yourself, you will need to download the datasets externally and place them in the appropriate directory structure.*
+
 The dataset consists of paired high-resolution (HR) and low-resolution (LR) images from multiple sources:
 - Canon (RealSR dataset)
 - DIV2K 
 - Nikon (RealSR dataset)
 
+**Dataset Size (1,300 total unique images):**
+- **Training Set**: 1,000 images (500 HR, 500 LR)
+- **Validation Set**: 300 images (150 HR, 150 LR)
+
 Images are organized in two main directories:
-- `Dataset/mixed_dataset/`: Training data containing both HR and LR images
-- `Dataset/val_dataset/`: Validation data with paired HR/LR images
+- `Dataset/mixed_dataset/`: Training data containing both HR and LR images.
+- `Dataset/val_dataset/`: Validation data with paired HR/LR images.
 
 ## Usage
 
